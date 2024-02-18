@@ -1,0 +1,100 @@
+@keyframes hover {
+    0%   {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-10deg);
+    }
+    40% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(-10deg);
+    }
+    80% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+body {
+    background-image: url("tree.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 10px);
+    margin: 0px;
+}
+
+#title {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#den {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #ffffff;
+}
+
+ul {
+    display: block;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+ul>li {
+    display: inline-block;
+}
+
+a {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+
+
+a:hover{
+    animation-name: hover;
+    animation-duration: 250ms;
+}
+
+img:hover{
+    animation-name: hover;
+    animation-duration: 500ms;
+}
+
+
+a p{
+    color:rgb(0, 0, 0);
+    background-color: rgb(248, 248, 248);
+    border-radius: 5px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
